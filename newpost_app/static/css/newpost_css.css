@@ -8,12 +8,12 @@
 }
 
 .page-header {
-    height: 130px;
+    height: 110px;
     width: 100%;
-    background-image: url('/static/images/header_background.jpg');
+    background-image: url('/static/images/new_post_logo.jpg');
     background-repeat: repeat;
     background-attachment: scroll;
-    background-position: 0% 50%;
+    background-position: 0% 0%;
     position: fixed;
     margin-top: 0px;
     left: 0px;
