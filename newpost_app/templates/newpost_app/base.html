@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'css/newpost_css.css' %}">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="{% static 'scripts/script.js' %}"></script>
+    <title>New Post {{ page_tile }}</title>
+</head>
+<body>
+<div class="page-header">
+    <div class="header_contents" id="new_post_heading">
+        New Post
+    </div>
+</div>
+<div class="body">
+    {% block body_content %}
+    {% endblock %}
+</div>
+</body>
+</html>

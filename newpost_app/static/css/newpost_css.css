@@ -1,0 +1,28 @@
+.body {
+    padding: 132px;
+    width: 100% ;
+    margin-left: auto ;
+    margin-right: auto ;
+    text-align: center;
+}
+
+.page-header {
+    height: 130px;
+    width: 100%;
+    background-image: url('/static/images/header_background.jpg');
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: 0% 50%;
+    position: fixed;
+    margin-top: 0px;
+    left: 0px;
+}
+
+.header_contents {
+    height: 130px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: 56pt;
+    color: #FFFFFF;
+}

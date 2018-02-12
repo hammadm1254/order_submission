@@ -1,0 +1,11 @@
+{% extends 'newpost_app/base.html' %}
+
+{% block body_content %}
+    <form method="POST" class="post-forms">{% csrf_token %}
+        {{ form.as_p }}
+        {% if error_message %}
+            {{ error_message }}<br><p>&nbsp;</p>
+        {% endif %}
+        <button type="submit" class="save btn btn-default">Process Order</button><br>
+    </form>
+{% endblock %}

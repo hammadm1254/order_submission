@@ -1,0 +1,12 @@
+{% extends 'newpost_app/base.html' %}
+
+{% block body_content %}
+    <!-- show submitted order here -->
+    <h3>
+        Origin: <span id="origin">{{ origin }}</span><br>
+        Destination:  <span id="destination">{{ destination }}</span><br>
+        Special Instructions: <p> <span id="instructions">{{ special_instructions }}</span><br></p>
+        Cost: $ <span id="cost">{{ cost }}</span><br>
+    </h3>
+<a href="/?{{ url }}"><button class="save btn btn-default">Edit Order</button></a><button id="submit_order" type="submit" class="save btn btn-default">Submit Order</button><br>
+{% endblock %}
