@@ -16,13 +16,13 @@ def cost_calculator(origin, dest):
     try:
         distance = response['rows'][0]['elements'][0]['distance']['value']
     except KeyError:
-        raise ValueError("Location Not found")
+        raise ValueError("Location Not Found!! GMaps API message:", response['status'])
 
     if type(distance) != int or distance <= 0:
         raise ValueError('There must be a separation of more than 1 mile between origin and destination')
     else:
-        distance = round(distance/1609.34, 2)
-        output = {'dest': response['destination_addresses'][0], 'origin': response['origin_addresses'][0], 'distance': distance}
+        cost = round(distance/1609.34, 2) + 18
+        output = {'dest': response['destination_addresses'][0], 'origin': response['origin_addresses'][0], 'cost': cost, 'distance': distance}
         return output
 
 #print(cost_calculator('fuckthis', 'cyyz'))

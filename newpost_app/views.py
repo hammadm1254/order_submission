@@ -64,4 +64,4 @@ def order_confirmation(request, form_object):
     url = urlencode({'query': 'none', 'origin': route_data['origin'], 'destination': route_data['dest'], 'specialInstructions': instruction_string}, doseq=True)
     return render(request, 'newpost_app/order_confirmation.html',
                   {'title': " - Order Confirmation", 'origin': route_data['origin'], 'destination': route_data['dest'],
-                   'special_instructions': instruction_string, 'cost': route_data['distance'], 'url': url})
+                   'special_instructions': instruction_string, 'cost': route_data['cost'], 'url': url})

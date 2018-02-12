@@ -38,7 +38,7 @@ $(document).ready(function(){
 
         console.log(xhr.responseText)
         //console.log(stringyData)
-        alert("Data Submitted to bringg")
+        alert("Order Submitted")
         document.location.href = "/";
     });
 });
