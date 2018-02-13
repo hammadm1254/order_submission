@@ -1,6 +1,8 @@
 {% extends 'newpost_app/base.html' %}
 
 {% block body_content %}
+    All dimensions are in inches<br>
+    Weight is in lbs.<br>
     <form method="POST" class="post-forms">{% csrf_token %}
         {{ form.as_p }}
         {% if error_message %}

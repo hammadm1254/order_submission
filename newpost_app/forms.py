@@ -6,4 +6,4 @@ class OrderForm(forms.ModelForm):
 
     class Meta:
         model = Order
-        fields = ('origin', 'destination', 'special_instructions')
+        fields = ('origin', 'destination', 'weight', 'length', 'width', 'height',  'special_instructions')
